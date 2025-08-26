@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rate Peer Helpers Program</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 50px; }
+    .star { font-size: 40px; cursor: pointer; color: lightgray; }
+    .star.selected { color: gold; }
+    textarea { width: 300px; height: 100px; margin-top: 10px; }
+    button { margin-top: 10px; padding: 10px 20px; background-color: #3b82f6; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Rate Peer Helpers Program</h2>
+  <p>Please rate the Peer Helpers program you attended.</p>
+
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <div>
+      <label>
+        <input type="radio" name="rating" value="Excellent" required> ⭐ Excellent
+      </label><br>
+      <label>
+        <input type="radio" name="rating" value="Good"> ⭐ Good
+      </label><br>
+      <label>
+        <input type="radio" name="rating" value="Fair"> ⭐ Fair
+      </label><br>
+      <label>
+        <input type="radio" name="rating" value="Poor"> ⭐ Poor
+      </label>
+    </div>
+
+    <br>
+    <textarea name="feedback" placeholder="Write your feedback here..." required></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
